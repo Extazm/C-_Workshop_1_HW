@@ -4,6 +4,9 @@ Console.WriteLine ("Введите второе число");
 int b = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine ("Введите третее число");
 int c = Convert.ToInt32(Console.ReadLine());
-if (a > b) {
-    
-}
+int max = a;
+if (a > max) max = a;
+if (b > max) max = b;
+if (c > max) max = c;
+Console.Write ("Наибольшее число -");
+Console.Write (max);
